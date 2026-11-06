@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+.venv/
+venv/
+habits.db
+build/
+dist/
+*.spec
+.idea/
+.vscode/
+
+sa
