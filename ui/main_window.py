@@ -22,6 +22,7 @@ from ui.widgets import HeatmapGrid
 
 STYLE = """
     QWidget { background-color: #f3f4f6;
+              color: #111827;
               font-family: 'Segoe UI', Arial, sans-serif; }
     QFrame#container { background-color: white;
                        border-radius: 12px;
@@ -30,9 +31,25 @@ STYLE = """
     QLabel#subtitle { font-size: 13px; color: #6b7280; }
     QLabel#streak_value { font-size: 20px; font-weight: 700; color: #10b981; }
     QLabel#info { font-size: 13px; color: #374151; }
-    QListWidget { background-color: white; border: 1px solid #e5e7eb;
+    QListWidget { background-color: white; color: #111827;
+                  border: 1px solid #e5e7eb;
                   border-radius: 8px; padding: 4px; font-size: 13px; }
+    QListWidget::item { color: #111827; }
     QCheckBox { font-size: 13px; color: #374151; }
+    QLineEdit { background-color: white; color: #111827;
+                border: 1px solid #d1d5db; border-radius: 6px; padding: 6px; }
+    QComboBox { background-color: white; color: #111827;
+                border: 1px solid #d1d5db; border-radius: 6px; padding: 4px; }
+    QComboBox QAbstractItemView { background-color: white; color: #111827;
+                                  selection-background-color: #10b981;
+                                  selection-color: white; }
+    QSpinBox { background-color: white; color: #111827;
+               border: 1px solid #d1d5db; border-radius: 6px; padding: 4px; }
+    QRadioButton { color: #111827; }
+    QTableWidget { background-color: white; color: #111827;
+                   border: 1px solid #e5e7eb; border-radius: 6px; }
+    QHeaderView::section { background-color: #f9fafb; color: #111827;
+                           border: none; padding: 6px; font-weight: 600; }
     QPushButton { border: none; border-radius: 8px;
                   padding: 10px 20px; font-weight: 600; font-size: 13px; }
     QPushButton#check_btn { background-color: #10b981; color: white; }

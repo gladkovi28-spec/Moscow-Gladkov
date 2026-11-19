@@ -21,6 +21,7 @@ def current_streak(date_strings):
 
 
 def record_streak(date_strings):
+    """Самая длинная серия за всю историю."""
     days = sorted(_to_dates(date_strings))
     if not days:
         return 0
@@ -33,6 +34,7 @@ def record_streak(date_strings):
 
 
 def month_percent(habit, date_strings):
+    """Процент выполнения за текущий месяц (по прошедшим дням)."""
     today = date.today()
     days = _to_dates(date_strings)
     month_days = [date(today.year, today.month, d) for d in range(1, today.day + 1)]

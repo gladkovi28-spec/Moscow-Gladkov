@@ -13,6 +13,7 @@ def get_connection():
 
 
 def init_db():
+    """Создаёт таблицы и индексы, если их ещё нет."""
     conn = get_connection()
     conn.executescript(
         """
@@ -144,6 +145,7 @@ def has_completion(habit_id, day):
 
 
 def toggle_completion(habit_id, day):
+    """Отметка «наоборот»: была — снимает, не было — ставит."""
     if has_completion(habit_id, day):
         remove_completion(habit_id, day)
         return False
